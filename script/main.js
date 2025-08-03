@@ -54,7 +54,7 @@ function get_grade(email){
 
 function login(){
     const clientId = '307579407449-16s6peb743oooe462hrp66h1rbrtedp6.apps.googleusercontent.com';
-    const redirectUri = 'http://127.0.0.1:5501/sub_page/load.html';
+    const redirectUri = 'https://digi-cre-login.github.io/sub_page/load.html';
     const scope = 'openid email profile';
     const state = Math.random().toString(36).substring(2);
 
@@ -74,4 +74,5 @@ document.getElementById("signin_button").addEventListener("click", login)
 
 function encode(data){
     return btoa(encodeURIComponent(data))
+
 }
